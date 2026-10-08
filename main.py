@@ -49,8 +49,7 @@ async def receive_contact(data: ContactData):
     conn.close()
 
     print("--- Naya Message Database Mein Save Ho Gaya ---")
-    print(f"Name: {data.name}, Email: {data.email}")
-    
+    print(f"Name: {data.name}, Email: {data.email},Message: {data.message}")
     return {
         "status": "success",
         "message": "Data successfully saved in SQLite database!"
