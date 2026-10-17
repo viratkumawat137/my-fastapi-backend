@@ -4,7 +4,7 @@ from pydantic import BaseModel
 import sqlite3
 
 app = FastAPI()
-
+              
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
