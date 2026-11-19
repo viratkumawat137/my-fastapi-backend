@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import sqlite3
 
-app = FastAPI()
+app = FastAPI()                                                                            
               
 app.add_middleware(
     CORSMiddleware,
